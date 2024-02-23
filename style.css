@@ -9,6 +9,8 @@ h3 {
 label {
     height: 30px;
     padding-top: 5px;
+    display: flex;
+    text-align: left;
 }
 
 input {
