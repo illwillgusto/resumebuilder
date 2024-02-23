@@ -37,7 +37,57 @@
                     </div>
                 </nav>
             </div>
-            
+            <div class="inputForm">
+                <form name="registration" onsubmit="return formValidation();">
+                    <ul>
+                        <li>
+                            <h3 id="personal" style="text-align: left; font-weight: bold;">Personal Details</h3>
+                        </li>
+                        <li><label for="username">Name:</label></li>
+                        <li><input type="text" name="username" size="30"></li>
+
+                        <li><label for="address">Address:</label></li>
+                        <li><input type="text" name="address" size="30"></li>
+                        
+                        <li><label for="country">Country:</label></li>
+                        <li>
+                            <select name="country">
+                                <option selected="" value="Default">(Please select a country)</option>
+                                <option value="United States"></option>
+                                <option value="Canada"></option>
+                                <option value="India"></option>
+                                <option value="Australia"></option>
+                                <option value="Russia"></option>
+                                <option value="China"></option>
+                            </select>
+                        </li>
+                        
+                        <li><label for="zip">Zip Code:</label></li>
+                        <li><input type="text" name="zip"></li>
+                        
+                        <li><label for="email">Email:</label></li>
+                        <li><input type="text" name="email" size="30"></li>
+
+                        <li><label for="phonenumber">Phone Number:</label></li>
+                        <li><input type="text" name="phonenumber" size="30"></li>
+                        
+                        <li><label for="gender">Sex:</label></li>
+                        <li><input type="radio" name="sex" value="Male"><span>Male</span></li>
+                        <li><input type="radio" name="sex" value="Female"><span>Female</span></li>
+                        
+                        <li><label>Language:</label></li>
+                        <li><input type="checkbox" name="language" value="English" checked><span>English</span></li>
+                        <li><input type="checkbox" name="language" value="English"><span>French</span></li>
+                        <li><input type="checkbox" name="language" value="English"><span>Spanish</span></li>
+                        <li><label for="desc">About:</label></li>
+                        <li><textarea name="desc" id="desc" cols="30" rows="10"></textarea></li>
+                    </ul>
+                    <br>
+                    <ul>
+
+                    </ul>
+                </form>
+            </div>
         </div>
     </div>
 </body>
