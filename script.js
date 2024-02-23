@@ -16,6 +16,7 @@ function formValidation() {
     var upname = document.registration.pname;
     var upabout = document.registration.upabout;
     var upos = document.registration.position;
+    var udur = document.registration.duration;
     var ucomp = document.registration.company;
 
     // if statements for personal details
@@ -41,6 +42,18 @@ function formValidation() {
             }
         }
     }
-
-    
+    return false;
 }
+
+function experience(ucomp, udur, upos) {
+
+    if (ucomp.value == "" || udur.value == "" || upos.value == "") {
+        document.getElementById("expinfo").remove()
+    }
+    else {
+        document.getElementsByClassName("company")[0].innerHTML = ucomp.value
+        document.getElementsByClassName("duration")[0].innerHTML = udur.value
+        document.getElementsByClassName("position")[0].innerHTML = upos.value
+    }
+}
+
