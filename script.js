@@ -103,3 +103,29 @@ function lang(ulang) {
     document.getElementById("lang").innerHTML = lang
 }
 
+function allLetter(uname) {
+    var letters = /^[A-Za-z ]+$; //Regex
+    if (uname.value.trim().match(letters)) {
+        document.getElementById("name").innerHTML = uname.value.toUpperCase()
+        return true;
+    }
+    else {
+        alert('Username must have alphabet characters only');
+        uname.focus();
+        return false;
+    }
+}
+
+function alphanumeric(uadd) {
+    var letters = /^[0-9a-zA-Z ]+$/; //Regex
+    if (uadd.value.trim().match(letters) || uadd.value.trim() === "") {
+        return true;
+    }
+    else {
+        alert('User address must have alphanumeric characters only');
+        uadd.focus();
+        return false;
+    }
+}
+
+
