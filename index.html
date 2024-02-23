@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Will Walton">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" id="theme" type="text/css" href="themes/">
+    <link rel="stylesheet" id="theme" type="text/css" href="themes/resume.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -77,8 +77,8 @@
                         
                         <li><label>Language:</label></li>
                         <li><input type="checkbox" name="language" value="English" checked><span>English</span></li>
-                        <li><input type="checkbox" name="language" value="English"><span>French</span></li>
-                        <li><input type="checkbox" name="language" value="English"><span>Spanish</span></li>
+                        <li><input type="checkbox" name="language" value="French"><span>French</span></li>
+                        <li><input type="checkbox" name="language" value="Spanish"><span>Spanish</span></li>
                         <li><label for="desc">About:</label></li>
                         <li><textarea name="desc" id="desc" cols="30" rows="10"></textarea></li>
                     </ul>
@@ -96,6 +96,19 @@
                             <li><input type="text" name="year" size="10" required></li>
                             <li><label for="result">Result:</label></li>
                             <li><input type="text" name="result" size="20" required></li>
+                        </div>
+                    </ul>
+                    <br>
+                    <ul>
+                        <li>
+                            <h3><label id="projects" style="text-align: center; margin-top: 2%; margin-top: 2%;">Projects</label></h3>
+                        </li>
+                        <div class="pform">
+                            <li><label for="pname">Name:</label></li>
+                            <li><input type="text" name="pname" size="20"></li>
+
+                            <li><label for="pabout">About:</label></li>
+                            <li><input type="text" name="pabout" size="20"></li>
                         </div>
                     </ul>
                     <br>
