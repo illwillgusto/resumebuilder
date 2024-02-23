@@ -76,3 +76,30 @@ function project(upname, upabout) {
     }
 }
 
+function checkAbout(uabout) {
+    if (uabout.value.trim() !== "")
+        document.getElementById("about").innerHTML = uabout.value.trim()
+    else
+        document.getElementById("about").parentElement.remove()
+}
+
+function address(uadd, ucountry, uzip) {
+    var address = ""
+    if (uadd.value.trim() !== "")
+        address += uadd.value.trim() + "<br>"
+    address += ucountry.value + "<br>"
+    if (uzip.value)
+        address += uzip.value
+    document.getElementById("address").innerHTML = address
+}
+
+function lang(ulang) {
+    var lang = ""
+
+    for (var i of ulang) {
+        if (i.checked)
+            lang += i.value + "<br>"
+    }
+    document.getElementById("lang").innerHTML = lang
+}
+
