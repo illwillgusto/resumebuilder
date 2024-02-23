@@ -54,4 +54,52 @@ form textarea {
 
 [type="submit"] {
     clear: left;
+    margin: 20px 0 0 230px;
+    font-size: 18px;
+    background-color: rgb(1, 65, 124);
+    padding-bottom: 1%;
+    margin-bottom: 3%;
+}
+
+p {
+    margin-left: 70px;
+    font-weight: bold;
+}
+
+.header {
+    padding: 25px;
+    font-size: 350%;
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+.inputMain {
+    width: 48%;
+    display: block;
+    float: left;
+    text-align: center;
+}
+
+.inputHeader {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    padding: 2%;
+}
+
+.categories {
+    padding: 0 2% 2% 2%;
+    font-size: large;
+}
+
+.previewMain #container {
+    width: 50%;
+    float: right;
+    border-style: solid;
+    border-collapse: collapse;
+    border-color: aqua;
+    background-color: azure;
+    text-align: center;
+    height: 100%;
 }
