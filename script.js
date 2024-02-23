@@ -57,3 +57,14 @@ function experience(ucomp, udur, upos) {
     }
 }
 
+function education(uyear, udegree, uinsti, ures) {
+
+    document.getElementsByClassName("yr")[0].innerHTML = uyear.value
+    document.getElementsByClassName("deg")[0].innerHTML = udegree.value
+    document.getElementsByClassName("insti")[0].innerHTML = uinsti.value
+    document.getElementsByClassName("res")[0].innerHTML = ures.value
+
+}
+
+
+
