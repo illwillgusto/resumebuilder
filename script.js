@@ -165,4 +165,32 @@ function ValidateEmail(uemail) {
     }
 }
 
+function validsex(usex) {
+    if (usex[0].checked || usex[1].checked) {
+        console.log("assets/" + (usex[0].checked ? "male.png" : "female.png"));
+        document.getElementsByTagName("img")[0].src = "./assets/" + (usex[0].checked ? "male.png" : "female.png")
+        console.log(document.getElementsByTagName("img")[0].src);
+        document.getElementsByTagName("h4")[0].innerHTML = usex[0].checked ? "MALE" : "FEMALE"
+        return true;
+    }
+    else {
+        alert('Select Male/Female');
+        usex[0].focus();
+        return false;
+    }
+}
 
+document.getElementById("blue").addEventListener("click", blue)
+function blue() {
+    document.getElementById("theme").setAttribute("href", "./themes/blue.css")
+}
+
+document.getElementById("grey").addEventListener("click", grey)
+function grey() {
+    document.getElementById("theme").setAttribute("href", "./themes/grey.css")
+}
+
+document.getElementById("default").addEventListener("click", purple)
+function purple() {
+    document.getElementById("theme").setAttribute("href", "./themes/resume.css")
+}
