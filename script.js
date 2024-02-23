@@ -18,5 +18,29 @@ function formValidation() {
     var upos = document.registration.position;
     var ucomp = document.registration.company;
 
+    // if statements for personal details
+
+    if (allLetter(uname)) {
+        if (alphanumeric(uadd)) {
+            if (countryselect(ucountry)) {
+                if (allnumeric(uzip)) {
+                    if (ValidateEmail(uemail, mail)) {
+                        if (validsex(usex)) {
+                            if (allnumeric(uyear)) {
+                                checkAbout(uabout),
+                                    lang(ulang),
+                                    education(uyear, udegree, uinsti, ures),
+                                    address(uadd, ucountry, uzip),
+                                    project(upname, upabout),
+                                    experience(ucomp, udur, upos);
+                                    alert('Form Successfully Submitted');
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     
 }
