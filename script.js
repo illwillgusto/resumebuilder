@@ -128,4 +128,41 @@ function alphanumeric(uadd) {
     }
 }
 
+function countryselect(ucountry) {
+    if (ucountry.value == "Default") {
+        alert('Select your country from the list');
+        ucountry.focus();
+        return false;
+    }
+    else {
+        return true;
+    }
+}
+
+function allnumeric(uzip) {
+    var numbers = /^[0-9]+$/;
+    if (uzip.value.trim().match(numbers) || uzip.value.trim() === "") {
+        return true;
+    }
+    else {
+        alert('Zip code must have numeric characters only');
+        unzip.focus();
+        return false;
+    }
+}
+
+function ValidateEmail(uemail) {
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if (uemail.value.match(mailformat)) {
+        document.getElementById("mail").href = "mailto:" + uemail.value
+        document.getElementById("mail").innerHTML = uemail.value
+        return true;
+    }
+    else {
+        alert("You have entered an invalid email address, please try again!")
+        uemail.focus();
+        return false;
+    }
+}
+
 
