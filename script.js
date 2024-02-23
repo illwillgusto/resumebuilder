@@ -66,5 +66,13 @@ function education(uyear, udegree, uinsti, ures) {
 
 }
 
-
+function project(upname, upabout) {
+    if (upname.value !== "" || upabout.value !== "") {
+        document.getElementsByClassName("pname")[0].innerHTML = upname.value
+        document.getElementsByClassName("upabout")[0].innerHTML = upabout.value
+    }
+    else {
+        document.getElementById("pinfo").remove()
+    }
+}
 
