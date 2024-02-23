@@ -2,3 +2,56 @@
     width: 100%;
 }
 
+h3 {
+    margin-top: 2%;
+}
+
+label {
+    height: 30px;
+    padding-top: 5px;
+}
+
+input {
+    border: none;
+    background-color: antiquewhite;
+    height: 30px;
+}
+
+form li {
+    list-style: none;
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+
+form ul li label {
+    float: left;
+    clear: left;
+    width: 100%;
+    text-align: 7px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 2%;
+}
+
+form ul li input, select, span{
+    float: left;
+    margin-bottom: 10px;
+    height: 30px;
+    padding-top: 1%;
+    padding-right: 2%;
+}
+
+select {
+    padding-top: 0%;
+    padding-inline-end: 2%;
+}
+
+form textarea {
+    float: left;
+    width: 350px;
+    height: 150px;
+    margin: 2%;
+}
+
+[type="submit"] {
+    clear: left;
+}
