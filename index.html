@@ -38,7 +38,7 @@
                 </nav>
             </div>
             <div class="inputForm">
-                <form name="registration" onsubmit="return formValidation();">
+                <form name="registration" onsubmit="event.preventDefault(); formValidation();">
                     <ul>
                         <li>
                             <h3 id="personal" style="text-align: left; font-weight: bold;">Personal Details</h3>

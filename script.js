@@ -9,12 +9,12 @@ function formValidation() {
     var usex = document.registration.sex;
     var ulang = document.registration.language;
     var uabout = document.registration.desc;
-    var uinsti = document.registration.institution;
+    var uinsti = document.registration.insti;
     var udegree = document.registration.degree;
     var uyear = document.registration.year;
     var ures = document.registration.result;
     var upname = document.registration.pname;
-    var upabout = document.registration.upabout;
+    var upabout = document.registration.pabout;
     var upos = document.registration.position;
     var udur = document.registration.duration;
     var ucomp = document.registration.company;
@@ -28,7 +28,7 @@ function formValidation() {
                     if (ValidateEmail(uemail, mail)) {
                         if (validsex(usex)) {
                             if (allnumeric(uyear)) {
-                                checkAbout(uabout),
+                                checkAbout(upabout),
                                     lang(ulang),
                                     education(uyear, udegree, uinsti, ures),
                                     address(uadd, ucountry, uzip),
@@ -69,7 +69,7 @@ function education(uyear, udegree, uinsti, ures) {
 function project(upname, upabout) {
     if (upname.value !== "" || upabout.value !== "") {
         document.getElementsByClassName("pname")[0].innerHTML = upname.value
-        document.getElementsByClassName("upabout")[0].innerHTML = upabout.value
+        document.getElementsByClassName("pabout")[0].innerHTML = upabout.value
     }
     else {
         document.getElementById("pinfo").remove()
@@ -167,7 +167,7 @@ function ValidateEmail(uemail) {
 
 function validsex(usex) {
     if (usex[0].checked || usex[1].checked) {
-        console.log("assets/" + (usex[0].checked ? "male.png" : "female.png"));
+        console.log("./assets/" + (usex[0].checked ? "male.png" : "female.png"));
         document.getElementsByTagName("img")[0].src = "./assets/" + (usex[0].checked ? "male.png" : "female.png")
         console.log(document.getElementsByTagName("img")[0].src);
         document.getElementsByTagName("h4")[0].innerHTML = usex[0].checked ? "MALE" : "FEMALE"
